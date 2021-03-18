@@ -1,0 +1,357 @@
+body {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#000099, #66c2ff, #ffcccc, #ffeee6);
+    font-size:40px;
+    font-family: 'Pacifico', 'Architects Daughter', Arial, sans-serif;
+    color:#F5F5F5;
+    font-weight:900;
+    animation: shine 3s forwards, blink 10s 1s infinite;
+    
+}
+button:hover{
+    animation: shine 0.5s forwards, blink 0.5s 0.5s infinite;
+}
+.a:hover{
+    letter-spacing: 10px;
+    
+}
+@keyframes shine {
+    0% {
+      color: black;
+      text-shadow: black;
+    }
+    100% {
+      color: black;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ffcccc,
+        -0.2rem 0.1rem 1rem #818f5b, 0.2rem 0.1rem 1rem #66c2ff,
+        0 -0.5rem 2rem #000099, 0 0.5rem 3rem #ffeee6;
+    }
+  }
+
+  
+h1{
+    animation: shine 5s forwards, blink 10s 1s infinite;
+}
+img{
+    height:700px;
+    width: auto;
+}
+.small-img{
+    height:500px;
+    width: auto;
+    justify-content: right;
+    align-items: flex-end;
+}
+.small-img1{
+    height:300px;
+    width: auto;
+}
+.small-img2{
+    height:400px;
+    width: auto;
+}
+
+
+#font{
+    color:#CCCCCC;
+    animation: shine 7s forwards, blink 10s 1s infinite;
+}
+#font1{
+    color:#999999;
+    animation: shine 10s forwards, blink 10s 1s infinite;
+}
+#font2{
+    color:#707070;
+    animation: shine 13s forwards, blink 10s 1s infinite;
+}
+
+  .testimonials{
+    padding: 40px 0;
+    background:inherit;
+    color: #434343;
+    text-align: center;
+    margin-top:-100px;
+  }
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+    
+  }
+  
+  .border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+    
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+    
+  }
+  .testimonial{
+    background: inherit;
+    padding: 30px;
+  }
+  .testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+  }
+  .name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    
+  }
+  .stars{
+    color: #6ab04c;
+    margin-bottom: 20px;
+  }
+  
+  
+  @media screen and (max-width:960px) {
+  .col{
+    flex: 100%;
+    max-width: 80%;
+  }
+  }
+  
+  @media screen and (max-width:600px) {
+  .col{
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
+  
+nav{
+    margin-top:-40px;
+    margin-bottom:100px;
+}
+nav ul{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    position:sticky;
+    
+    
+    
+    
+}
+nav ul li{
+    flex-direction: row;
+    display: inline-block;
+    margin:0 auto;
+    
+}
+nav ul li .a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Pacifico', 'Architects Daughter', Arial, sans-serif;
+    border: 2px solid blue;
+    border-radius: 50%;
+}
+#button{
+background:none;
+border:none;
+font-size:25px;
+}
+.btn{
+height: 60px;
+width: 200px;
+background-color: none;
+border: 4px solid none;
+text-transform: uppercase;
+font-weight: 700;
+cursor:pointer;
+font-size: 25px;
+position: relative;
+}
+
+.btn::before, .btn::after {
+content: "";
+height: 4px;
+width: 14px;
+position: absolute;
+transform: skewX(50deg);
+background: white;
+transition: .4s linear;
+
+}
+.btn::before{
+top: -4px;
+left: 10%;
+opacity: 0;
+}
+
+.btn::after{
+bottom: -4px;
+right: 10%;
+opacity:0;
+}
+
+.btn:hover::before{
+left:80%;
+opacity:1;
+}
+.btn:hover::after{
+right:80%;
+opacity:1;
+}
+
+.btn1{
+    height: 60px;
+    width: 200px;
+    margin-top:50px;
+    background-color: inherit;
+    border: 4px solid black;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor:pointer;
+    font-size: 25px;
+    position: relative;
+    color:white;
+    transform:scale(1.5)
+    }
+    .btn1::before, .btn1::after {
+        content: "";
+        height: 4px;
+        width: 14px;
+        position: absolute;
+        transform: skewX(50deg);
+        background: #66c2ff;
+        transition: .4s linear;
+        
+        
+        }
+        .btn1::before{
+        top: -4px;
+        left: 10%;
+        opacity: 1;
+        }
+        
+        .btn1::after{
+        bottom: -4px;
+        right: 10%;
+        opacity:1;
+        }
+        
+        .btn1:hover::before{
+        left:80%;
+        opacity:1;
+        }
+        .btn1:hover::after{
+        right:80%;
+        opacity:1;
+        }
+
+.div{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom:100px;
+    
+    
+}
+.div1{
+    text-align: right;
+    flex:2;
+    margin:auto 100px;
+    background-color:inherit;
+    
+    
+}
+.div2{
+    text-align: center;
+    flex:2;
+    margin:auto 100px;
+    
+}
+hr{
+    align-items: center;
+    border-bottom: 3px solid black;
+    margin-bottom:120px;
+}
+
+
+
+#nav-footer{
+    margin:none;
+    border-bottom:2px solid black;
+    border-top:2px solid black;
+    position:fixed;
+    bottom:-100px;
+    right:0px;
+    left:0px;
+    width: 100%;
+    height: 80px;
+    color:black;
+    font-size: 20px;
+}
+#nav-footer ul{
+    list-style-type: none;
+    text-decoration: none;
+    position:sticky;
+    display:flex;
+    
+    
+}
+#nav-footer ul li{
+    flex:2;
+    flex-direction: row;
+    display: inline-block;
+    text-align: center;
+    
+    
+}
+#nav-footer ul .t05{
+    flex:1;
+    flex-direction: row;
+    display: inline-block;
+    text-align: center;
+}
+.t05{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+   
+}
+.ap{
+all:revert;
+color:black;
+}
+
+.submit{
+    border-color:inherit;
+    padding:10px 70px;
+    margin-top:-10px;
+    background-color: inherit;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    animation: shine 7s forwards, blink 10s 1s infinite;
+    font-size:inherit;
+    font-family:inherit;
+    color:black;
+    text-decoration: none;
+}
+
