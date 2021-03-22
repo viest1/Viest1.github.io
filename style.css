@@ -379,7 +379,7 @@ color:black;
 textarea{
   resize:none;
 }
-@media (max-width:1080px){
+@media (max-width:1024px){
   nav ul{
     margin:auto;
     margin-top:50px;
