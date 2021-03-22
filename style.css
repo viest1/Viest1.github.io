@@ -3,22 +3,20 @@ body {
     margin: 0;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     background: linear-gradient(#000099, #66c2ff, #ffcccc, #ffeee6);
     font-size:40px;
     font-family: 'Pacifico', 'Architects Daughter', Arial, sans-serif;
     color:#F5F5F5;
     font-weight:900;
-    animation: shine 3s forwards, blink 10s 1s infinite;
-    
+    animation: shine 3s forwards, blink 10s 1s infinite;  
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 button:hover{
     animation: shine 0.5s forwards, blink 0.5s 0.5s infinite;
 }
 .a:hover{
-    letter-spacing: 10px;
-    
+    letter-spacing: 10px; 
 }
 @keyframes shine {
     0% {
@@ -32,8 +30,6 @@ button:hover{
         0 -0.5rem 2rem #000099, 0 0.5rem 3rem #ffeee6;
     }
   }
-
-  
 h1{
     animation: shine 5s forwards, blink 10s 1s infinite;
 }
@@ -55,8 +51,6 @@ img{
     height:400px;
     width: auto;
 }
-
-
 #font{
     color:#CCCCCC;
     animation: shine 7s forwards, blink 10s 1s infinite;
@@ -69,7 +63,6 @@ img{
     color:#707070;
     animation: shine 13s forwards, blink 10s 1s infinite;
 }
-
   .testimonials{
     padding: 40px 0;
     background:inherit;
@@ -81,18 +74,14 @@ img{
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
-    padding: 0 20px;
-    
+    padding: 0 20px; 
   }
-  
   .border{
     width: 160px;
     height: 5px;
     background: #6ab04c;
     margin: 26px auto;
-    
   }
-  
   .row{
     display: flex;
     flex-wrap: wrap;
@@ -113,34 +102,28 @@ img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    
   }
   .name{
     font-size: 20px;
     text-transform: uppercase;
     margin: 20px 0;
-    
   }
   .stars{
     color: #6ab04c;
     margin-bottom: 20px;
   }
-  
-  
   @media screen and (max-width:960px) {
   .col{
     flex: 100%;
     max-width: 80%;
   }
   }
-  
   @media screen and (max-width:600px) {
   .col{
     flex: 100%;
     max-width: 100%;
   }
   }
-  
 nav{
     margin-top:-40px;
     margin-bottom:100px;
@@ -151,16 +134,11 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     position:sticky;
-    
-    
-    
-    
 }
 nav ul li{
     flex-direction: row;
     display: inline-block;
-    margin:0 auto;
-    
+    margin:0 auto;  
 }
 nav ul li .a{
     text-decoration: none;
@@ -185,7 +163,6 @@ cursor:pointer;
 font-size: 25px;
 position: relative;
 }
-
 .btn::before, .btn::after {
 content: "";
 height: 4px;
@@ -194,20 +171,17 @@ position: absolute;
 transform: skewX(50deg);
 background: white;
 transition: .4s linear;
-
 }
 .btn::before{
 top: -4px;
 left: 10%;
 opacity: 0;
 }
-
 .btn::after{
 bottom: -4px;
 right: 10%;
 opacity:0;
 }
-
 .btn:hover::before{
 left:80%;
 opacity:1;
@@ -216,7 +190,6 @@ opacity:1;
 right:80%;
 opacity:1;
 }
-
 .btn1{
     height: 60px;
     width: 200px;
@@ -239,21 +212,17 @@ opacity:1;
         transform: skewX(50deg);
         background: #66c2ff;
         transition: .4s linear;
-        
-        
         }
         .btn1::before{
         top: -4px;
         left: 10%;
         opacity: 1;
         }
-        
         .btn1::after{
         bottom: -4px;
         right: 10%;
         opacity:1;
         }
-        
         .btn1:hover::before{
         left:80%;
         opacity:1;
@@ -262,38 +231,84 @@ opacity:1;
         right:80%;
         opacity:1;
         }
-
 .div{
     display:flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-bottom:100px;
-    
-    
+    margin-bottom:100px;   
 }
 .div1{
     text-align: right;
     flex:2;
     margin:auto 100px;
-    background-color:inherit;
-    
-    
+    background-color:inherit; 
 }
 .div2{
     text-align: center;
     flex:2;
-    margin:auto 100px;
-    
+    margin:auto 100px;   
+}
+.div2-1{
+  flex:2;
+  text-align: center;
+  margin:auto 100px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+.div2-2{
+  flex:1; 
+}
+.div2-3{
+  flex:3;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+.div5{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: auto;
+}
+#form1 label,input,textarea{
+  margin:10px auto;
+  padding:10px auto;
+  justify-content: space-around;
+  transition: scale(2);
+  background:inherit; 
+}
+#form1 input,textarea{
+  border: 2px solid black;
+}
+#form1 label{
+  font-size:24px;
+}
+#message{
+position: relative;
+bottom:90px;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+textarea::placeholder{
+  font-size:20px;
+}
+
+#form1{
+  border:2px solid white;
+  padding: 50px;
 }
 hr{
-    align-items: center;
-    border-bottom: 3px solid black;
-    margin-bottom:120px;
+  background: linear-gradient(to right,#000099, #66c2ff,  #ffeee6);
+  height: 5px;
+  border:none;
+  transform:rotate(-5deg);
+  margin-bottom:80px;
 }
-
-
-
 #nav-footer{
     margin:none;
     border-bottom:2px solid black;
@@ -311,17 +326,13 @@ hr{
     list-style-type: none;
     text-decoration: none;
     position:sticky;
-    display:flex;
-    
-    
+    display:flex;  
 }
 #nav-footer ul li{
     flex:2;
     flex-direction: row;
     display: inline-block;
-    text-align: center;
-    
-    
+    text-align: center; 
 }
 #nav-footer ul .t05{
     flex:1;
@@ -339,7 +350,6 @@ hr{
 all:revert;
 color:black;
 }
-
 .submit{
     border-color:inherit;
     padding:10px 70px;
@@ -354,4 +364,179 @@ color:black;
     color:black;
     text-decoration: none;
 }
+.submit1{
+  border-color:inherit;
+  margin:auto;
+  padding:10px 70px;
+  background-color: inherit;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  animation: shine 7s forwards, blink 10s 1s infinite;
+  font-size:inherit;
+  font-family:inherit;
+}
+textarea{
+  resize:none;
+}
+@media (max-width:1080px){
+  nav ul{
+    margin:auto;
+    margin-top:50px;
+  }
+  
+  body{
+    margin:auto 10px;
+    font-size:30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  img{
+    width:100%;
+    height:auto;
+    align-items: center;
+  text-align: center;
+  justify-content: center;
+  }
+  
+  .div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .div1{
+    width:100%;
+    flex-wrap:wrap;
+    margin:auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .small-img{
+    width: 100%;
+    height: auto;
+  }
+  .small-img1{
+    width: 100%;
+    height: auto;
+  }
+  .small-img2{
+    width: 100%;
+    height: auto;
+  }
+  hr{
+    width: 100%;
+    margin:none;
+  }
+  .div2{
+    width:100%;
+    
+    margin:auto;
+    flex-wrap:wrap;
+    
+  }
+  footer{
+    display:none;
+  }
+  .div2-3{
+    display:flex;
+  }
+  form, label, input, textarea, .submit1{
+    width: 100%;
+    margin:auto 15px;
+    padding:auto 15px;
+    flex-direction: column;
+  }
+  .submit1{
+    margin-top:15px;
+  }
+  #message{
+    all:revert;
+  }
+  .div5 .div1{
+    display:none;
+  }
+}
+@media (max-width:580px){
+  nav ul{
+    margin:auto;
+    margin-top:50px;
+    padding: auto;
+    transform:scale(0.6);
+    justify-content: center;
+    margin-bottom:-90px;
+  }
+  body{
+    margin:auto 10px;
+    font-size:18px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  img{
+    width:100%;
+    height:auto;
+    align-items: center;
+  text-align: center;
+  justify-content: center;
+  }
+  .div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .div1{
+    width:100%;
+    flex-wrap:wrap;
+    margin:auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .small-img{
+    width: 100%;
+    height: auto;
+  }
+  .small-img1{
+    width: 100%;
+    height: auto;
+  }
+  .small-img2{
+    width: 100%;
+    height: auto;
+  }
+  hr{
+    width: 100%;
+    margin:none;
+  }
+  .div2{
+    width:100%;
+    margin:auto;
+    flex-wrap:wrap;
+  }
+  footer{
+    display:none;
+  }
+  .div5 .div1{
+    display:none;
+  }
+  form, label, input, textarea, .submit1{
+    width: 100%;
+    margin:auto 15px;
+    padding:auto 15px;
+    flex-direction: column;
+  }
+  .submit1{
+    margin-top:15px; 
+  }
+  #message{
+    all:revert;
+  }
+}
+
 
